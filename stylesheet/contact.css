@@ -129,6 +129,7 @@ a {
   float: right;
   width: 40%;
   margin-top: 2em;
+  background-color: #f6f6f6;
 }
 button:hover {
   box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
