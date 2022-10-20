@@ -20,6 +20,7 @@ a {
 .contact-header {
   background-color: #c7ddea;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -30,7 +31,7 @@ a {
 .header-text {
   font-family: "Frank Ruhl Libre", serif;
   flex-basis: 40%;
-  width: 300px;
+  width: 70%;
   font-size: 3em;
   padding-left: 0.5em;
   padding-right: 1em;
@@ -41,10 +42,10 @@ a {
 }
 
 .contact-header img {
-  height: 42vh;
+  height: 40vh;
   object-fit: cover;
   position: absolute;
-  right: 1.5em;
+  right: 1em;
   bottom: 0em;
 }
 
