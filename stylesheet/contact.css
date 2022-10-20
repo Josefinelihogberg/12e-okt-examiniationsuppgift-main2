@@ -220,7 +220,7 @@ button:active {
 
   .header-text {
     flex-basis: 0;
-    width: 600px;
+    width: 410px;
     align-self: center;
   }
 
@@ -264,8 +264,8 @@ button:active {
 
   .contact-address {
     position: relative;
-    width: 31em;
-    height: 20em;
+    width: 24em;
+    height: 15em;
     padding: 1em;
     top: -33em;
     left: 8em;
@@ -273,11 +273,11 @@ button:active {
 
   .address-header {
     padding-top: 0.3em;
-    font-size: 4.1em;
+    font-size: 3.1em;
   }
 
   .address-text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 0.9em;
     font-weight: 500;
   }
