@@ -11,40 +11,46 @@ body {
   font-family: "Fira Sans", sans-serif;
   background-color: #e6e6e6;
   scroll-behavior: smooth;
-  letter-spacing: -0.02em;
 }
+
 /* || Header - all parts of the header*/
+
 .header-div-column:first-child {
   background-color: #c7ddea;
-  padding: 1em 1.5em 0 1.5em;
+  padding: 1em 1.5em 0em 1.5em;
 }
 
 .header-title {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 3em;
-
-  margin: 1em 0;
-  font-weight: 900;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 .header-text {
-  line-height: 1.6em;
+  line-height: 1.7em;
   margin: 1em 0;
-  font-size: 0.9rem;
+  font-size: 1em;
   color: rgb(87, 91, 96);
+  font-weight: 700;
 }
 .white-text {
   color: #fff;
 }
-.header-btn {
-  padding: 1em 3em;
+.header-btn,
+.section-btn {
+  font-family: "Fira Sans", sans-serif;
+  padding: 1.2em 4em;
   border: none;
   box-shadow: 0 2px 1px rgb(176, 176, 176);
   border-radius: 50px;
   text-transform: uppercase;
   margin: 2em 0;
   font-weight: 700;
+  font-size: 0.8em;
   background-color: rgb(255, 255, 255);
   color: #000;
+  width: 13em;
 }
 
 .header-img,
@@ -59,7 +65,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 20em;
+  height: 22em;
 }
 .header-div:nth-child(1) {
   background-color: #f17949;
@@ -68,10 +74,20 @@ body {
 .header-div:nth-child(2) {
   background-color: #fab131;
 }
+
 .div-text {
   font-family: "Fira Sans", sans-serif;
+  font-size: 1em;
   font-weight: 700;
-  margin-bottom: 1em;
+  color: rgb(59, 56, 55);
+  line-height: 1.6em;
+}
+
+.headerdiv-text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 1.2em;
+  font-weight: 700;
   color: rgb(59, 56, 55);
 }
 
@@ -79,7 +95,7 @@ body {
   font-family: "Frank Ruhl Libre", serif;
   text-decoration: none;
   color: #fff;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -100,15 +116,16 @@ body {
   font-size: 3em;
   color: #fff;
   line-height: 1.2em;
-  padding-bottom: 1em;
+  padding-bottom: 0.3em;
+}
+
+.text {
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 .section-btn {
   display: none;
-}
-
-.div-text {
-  line-height: 1.6em;
 }
 
 /* || Product Cards */
@@ -176,6 +193,7 @@ body {
   line-height: 1.5em;
   font-size: 0.8rem;
   text-align: center;
+  font-weight: 700;
 }
 
 .page-section {
@@ -194,12 +212,16 @@ body {
   font-size: 3rem;
   padding: 1em 0em;
   text-align: center;
+  font-weight: 900;
 }
 .list-item-ordered {
   height: 12em;
   text-align: center;
   position: relative;
   padding: 5em 0em;
+  line-height: 1.2em;
+  font-weight: 700;
+  font-size: 1.3em;
 }
 .list-item-ordered:nth-child(odd) {
   background-color: #d6d6d6;
@@ -215,8 +237,8 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.3em;
-  left: 0.25em;
+  top: 0.8em;
+  left: 0.5em;
 }
 
 .list-item-ordered:nth-child(3)::before {
@@ -225,17 +247,18 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.3em;
-  left: 0.25em;
+  top: 0.8em;
+  left: 0.5em;
 }
+
 .list-item-ordered:nth-child(4)::before {
   content: "03";
   font-family: "Frank Ruhl Libre", serif;
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.3em;
-  left: 0.25em;
+  top: 0.8em;
+  left: 0.5em;
 }
 .list-item-ordered:nth-child(5)::before {
   content: "04";
@@ -243,8 +266,8 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.3em;
-  left: 0.25em;
+  top: 0.8em;
+  left: 0.5em;
 }
 .list-item-ordered:nth-child(6)::before {
   content: "05";
@@ -252,8 +275,8 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.3em;
-  left: 0.25em;
+  top: 0.8em;
+  left: 0.5em;
 }
 
 /* || Bottom nav : Take me up*/
@@ -269,7 +292,7 @@ body {
   background-color: #757575;
 }
 .thin-gray-box {
-  height: 4.5em;
+  height: 6em;
   background-color: #e6e6e6;
 }
 
@@ -285,6 +308,9 @@ body {
   }
 
   /*Header*/
+  .header-text {
+    margin-left: 0;
+  }
   .header-img {
     width: 55%;
     max-height: 65%;
@@ -351,18 +377,10 @@ body {
     margin: 4em;
   }
   .section-div {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 50%;
-  }
-  .section-btn {
-    display: block;
-    padding: 1em 3em;
-    border: none;
-    box-shadow: 0 2px 1px rgb(176, 176, 176);
-    border-radius: 50px;
-    text-transform: uppercase;
-    margin: 2em 0;
-    font-weight: 700;
-    background-color: rgb(255, 255, 255);
+    gap: 3em;
   }
 
   button:hover {
@@ -401,12 +419,73 @@ body {
     margin: auto;
   }
 
+  .main-text {
+    padding-left: 15em;
+    padding-right: 15em;
+    margin-top: 1em;
+    line-height: 1.6em;
+    font: ;
+  }
+  .section-title {
+    margin-bottom: 4em;
+    padding-top: 0;
+    padding-right: 4em;
+    padding-left: 1.7em;
+    line-height: 1em;
+  }
+
+  .section-btn {
+    margin-left: 6.5em;
+    display: block;
+    margin-bottom: 4em;
+  }
+
+  .section-text {
+    padding-right: 10em;
+    line-height: 1.8em;
+  }
+
+  .header-title {
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+    margin-bottom: 0em;
+  }
+  .header-text {
+    margin-left: 10em;
+    margin-right: 16em;
+  }
+
+  .header-img {
+    width: 58%;
+    object-fit: cover;
+    position: absolute;
+    left: 17em;
+  }
+  .header-btn {
+    margin-left: 12em;
+    margin-top: 4em;
+  }
+
+  /* || Bottom list: How It works?*/
+
+  .list-title,
+  .list-item-ordered {
+    height: 56vh;
+    flex: 1 0 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* || Bottom-nav*/
   .bottom-nav {
     display: block;
-    height: 4em;
+    height: 5em;
     background-color: #a9a19e;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
   a {
     text-decoration: none;
@@ -414,12 +493,14 @@ body {
   }
   .bottom-nav i {
     position: relative;
-    top: 0.3em;
+    left: 6%;
+    font-size: 2.5em;
   }
 
   .bottom-nav p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 700;
+    align-self: center;
   }
   .thin-gray-box {
     display: none;
