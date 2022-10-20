@@ -24,7 +24,7 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 44vh;
+  height: 38vh;
   flex-direction: column;
 }
 
@@ -42,7 +42,7 @@ a {
 }
 
 .contact-header img {
-  height: 40vh;
+  max-height: 50vh;
   object-fit: cover;
   position: absolute;
   right: 1em;
