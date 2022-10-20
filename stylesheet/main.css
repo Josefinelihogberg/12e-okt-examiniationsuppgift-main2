@@ -410,14 +410,15 @@ body {
     bottom: -15em;
   }
   .page-section:last-child {
-    padding: 10em;
-    padding-top: 15em;
+    padding: 14em 12em 11em 12em;
   }
-  .section-title:first-child {
-    padding-bottom: 0;
+  .section-title:first-of-type {
+    position: relative;
+    left: 1.8em;
+    line-height: 1em;
   }
   .section-title:last-of-type {
-    margin: auto;
+    width: 85%;
   }
 
   .main-text {
@@ -426,13 +427,6 @@ body {
     margin-top: 1em;
     line-height: 1.6em;
     font: ;
-  }
-  .section-title {
-    margin-bottom: 4em;
-    padding-top: 0;
-    padding-right: 4em;
-    padding-left: 1.7em;
-    line-height: 1em;
   }
 
   .section-btn {
