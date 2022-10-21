@@ -11,52 +11,57 @@ body {
   font-family: "Fira Sans", sans-serif;
   background-color: #e6e6e6;
   scroll-behavior: smooth;
+  letter-spacing: -0.02em;
 }
-
 /* || Header - all parts of the header*/
 
 .header-div-column:first-child {
   background-color: #c7ddea;
-  padding: 1em 1.5em 0em 1.5em;
+  padding: 1em 1.5em 0 1.5em;
 }
 
 .header-title {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 3em;
-  margin-top: 1em;
-  margin-bottom: 0;
-  font-weight: bold;
+  margin-top: 1.3em;
+  margin-right: 1em;
+  font-weight: 900;
 }
 .header-text {
-  line-height: 1.5em;
-  margin: 1em 0;
-  font-size: 1em;
+  line-height: 1.6em;
+  margin: 1.5em 0;
+  font-size: 1rem;
   color: rgb(87, 91, 96);
-  font-weight: 700;
+  font-weight: 600;
 }
 .white-text {
   color: #fff;
 }
 .header-btn,
 .section-btn {
-  font-family: "Fira Sans", sans-serif;
-  padding: 1.2em 4em;
+  padding: 1.2em 3.5em;
   border: none;
   box-shadow: 0 2px 1px rgb(176, 176, 176);
   border-radius: 50px;
   text-transform: uppercase;
   margin: 2em 0;
   font-weight: 700;
-  font-size: 0.8em;
   background-color: rgb(255, 255, 255);
   color: #000;
-  width: 15em;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .header-img,
 .card-img {
+  height: auto;
   width: 100%;
-  vertical-align: middle; /*made the border go away*/
+  vertical-align: middle; /*made the thin border under the images go away*/
+}
+.header-img {
+  margin-top: 2em;
 }
 
 .header-div {
@@ -65,7 +70,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 22em;
+  height: 20em;
 }
 .header-div:nth-child(1) {
   background-color: #f17949;
@@ -74,38 +79,32 @@ body {
 .header-div:nth-child(2) {
   background-color: #fab131;
 }
-
 .div-text {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1em;
   font-weight: 700;
+  margin-bottom: 1em;
   color: rgb(59, 56, 55);
-  line-height: 1.6em;
+  font-size: 1rem;
 }
-
-.headerdiv-text {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 0.9em;
-  margin-bottom: 1.2em;
-  font-weight: 700;
-  color: rgb(59, 56, 55);
+.header-div p:first-of-type {
+  font-size: 0.7em;
 }
 
 .header-div a {
   font-family: "Frank Ruhl Libre", serif;
   text-decoration: none;
   color: #fff;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   white-space: nowrap;
 }
 
-/* || Navigation */
+/* || navigation */
 
 .page-nav {
   background-color: rgb(232, 232, 232);
 }
-/* || Main section of the page: Your personal financial...till About us */
+/* || main section of the page */
 
 .page-section {
   padding: 2em;
@@ -113,19 +112,29 @@ body {
 
 .section-title {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 3em;
+  font-size: 2.8em;
   color: #fff;
   line-height: 1.2em;
-  padding-bottom: 0.3em;
-}
-
-.text {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-bottom: 1em;
 }
 
 .section-btn {
   display: none;
+}
+
+button:hover {
+  box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
+  background-color: #424243;
+  color: white;
+}
+
+button:active {
+  box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
+  transform: translateY(4px);
+}
+
+.div-text {
+  line-height: 1.6em;
 }
 
 /* || Product Cards */
@@ -169,13 +178,13 @@ body {
   height: 12em;
   object-fit: cover;
   object-position: 0 1.5em;
-  margin: 0 3em;
+  margin: 0 3.2em;
 }
-
+/* Image was smaller than the other - fixed the problem */
 .color-card-orange .card-img {
   max-width: 60%;
-  object-position: -0em 3em;
-  margin: 0 2.5em;
+  object-position: 0 3em;
+  margin: 0 2.6em;
 }
 
 .card-body {
@@ -184,17 +193,18 @@ body {
 }
 .card-title {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000;
   padding: 1em 0;
   text-align: center;
+  font-weight: 700;
 }
 .card-text {
   color: rgb(142, 142, 142);
   line-height: 1.5em;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .page-section {
@@ -204,7 +214,7 @@ body {
   text-align: center;
 }
 
-/* Bottom grid list: How It works?*/
+/* || Bottom grid list */
 
 .list-title {
   color: #000;
@@ -213,17 +223,18 @@ body {
   font-size: 3rem;
   padding: 1em 0em;
   text-align: center;
-  font-weight: 900;
 }
 .list-item-ordered {
   height: 12em;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   position: relative;
   padding: 5em 0em;
-  line-height: 1.2em;
   font-weight: 700;
-  font-size: 1.3em;
+  line-height: 1.2em;
 }
+
 .list-item-ordered:nth-child(odd) {
   background-color: #d6d6d6;
 }
@@ -238,8 +249,8 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.8em;
-  left: 0.5em;
+  top: 0.3em;
+  left: 0.25em;
 }
 
 .list-item-ordered:nth-child(3)::before {
@@ -248,18 +259,17 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.8em;
-  left: 0.5em;
+  top: 0.3em;
+  left: 0.25em;
 }
-
 .list-item-ordered:nth-child(4)::before {
   content: "03";
   font-family: "Frank Ruhl Libre", serif;
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.8em;
-  left: 0.5em;
+  top: 0.3em;
+  left: 0.25em;
 }
 .list-item-ordered:nth-child(5)::before {
   content: "04";
@@ -267,8 +277,8 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.8em;
-  left: 0.5em;
+  top: 0.3em;
+  left: 0.25em;
 }
 .list-item-ordered:nth-child(6)::before {
   content: "05";
@@ -276,59 +286,73 @@ body {
   color: #a9a19e;
   font-size: 2.5em;
   position: absolute;
-  top: 0.8em;
-  left: 0.5em;
+  top: 0.3em;
+  left: 0.25em;
 }
 
-/* || Bottom nav : Take me up*/
+/* || bottom nav*/
 
 .bottom-nav {
   display: none;
 }
 
-/* footer gray box */
+/* || footer gray box */
 
 .gray-box {
   height: 15em;
   background-color: #757575;
 }
 .thin-gray-box {
-  height: 6em;
+  height: 4.5em;
   background-color: #e6e6e6;
 }
 
-/* || Media Query for laptops and desktops*/
+/* || Media Query for bigger screens*/
 
 @media screen and (min-width: 768px) {
   body {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
   .page-header {
     display: flex;
   }
 
-  /*Header*/
-  .header-text {
-    margin-left: 0;
-  }
+  /* || Header*/
   .header-img {
-    width: 55%;
-    max-height: 65%;
+    width: 49%;
+    max-height: 55%;
     position: absolute;
     bottom: 0;
-    right: 5%;
+    right: 4%;
   }
   .header-div-column {
     flex: 2 1 50%;
     height: auto;
     position: relative;
   }
+  .header-title {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 3.5;
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+    font-weight: 900;
+  }
+  .header-div p:first-of-type {
+    font-size: 0.8em;
+  }
 
-  /* || Navbar*/
+  .header-text {
+    width: 18em;
+    font-size: 1.1em;
+  }
+  .header-div-column:nth-child(1) {
+    padding-left: 9em;
+  }
+  /*|| navbar*/
   .page-nav {
     width: 100%;
-    height: 4em;
+    height: 6em;
   }
   .page-nav .nav-list {
     display: flex;
@@ -339,17 +363,37 @@ body {
   }
   .nav-list .list-item {
     width: 100%;
-    padding: 2em 1.2em;
-    font-size: 0.9rem;
+    padding: 2.5em 1.2em;
+    font-size: 1rem;
     text-align: center;
   }
   .list-div {
+    position: static;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   .list-div > * {
+    height: 25em;
     flex: 1 0 33%;
+  }
+
+  .list-item-ordered {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em; /* here */
+    color: rgb(87, 91, 96);
+    height: 18em;
+    line-height: 1.3em;
+  }
+  .list-title {
+    font-size: 3rem;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .list-item a {
@@ -366,7 +410,8 @@ body {
     color: #000;
   }
 
-  /* || Main section */
+  /* || main section */
+
   .page-section {
     display: flex;
     flex-wrap: wrap;
@@ -374,111 +419,67 @@ body {
   }
   .section-container {
     display: flex;
-    gap: 6em;
-    margin: 4em;
+    gap: 12em;
+    margin: 8em;
   }
   .section-div {
-    display: flex;
-    flex-direction: column;
     flex: 1 1 50%;
-    gap: 3em;
+  }
+  .section-btn {
+    display: block;
   }
 
-  button:hover {
-    box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
-    background-color: #424243;
-    color: white;
+  .section-title {
+    font-size: 3.5em;
+    line-height: 0.9em;
+  }
+  .div-text {
+    font-size: 1.2em;
   }
 
-  button:active {
-    box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
-    transform: translateY(4px);
-  }
-
-  /* Responsive option for images but will create problems with them such as weird cuts and margin problems.
-  .product-card-wrapper {
-    max-width: 100%;
-    margin: 0 auto; 
-    display: flex;
-    gap: 2em; 
-  }*/
-  /* || Product cards*/
   .product-card {
-    width: 15em;
+    width: 26%;
     position: relative;
     margin-top: -15em;
     bottom: -15em;
   }
-  .page-section:last-child {
-    padding: 14em 12em 11em 12em;
+
+  .card-img {
+    max-width: 45%;
+    height: 12em;
+    object-fit: cover;
+    object-position: 0 1.5em;
+    margin: 0 4.5em;
   }
-  .section-title:first-of-type {
-    position: relative;
-    left: 1.8em;
+
+  .color-card-orange .card-img {
+    max-width: 60%;
+    object-position: 0 3em;
+    margin: 0 3.5em;
+  }
+
+  .page-section:last-child {
+    padding: 20em;
+    padding-bottom: 10em;
+    padding-top: 13em;
+  }
+
+  .section-title:first-child {
+    padding-bottom: 0;
     line-height: 1em;
   }
+
   .section-title:last-of-type {
-    width: 85%;
+    margin: auto;
+    padding-bottom: 0.6em;
   }
 
-  .main-text {
-    padding-left: 15em;
-    padding-right: 15em;
-    margin-top: 1em;
-    line-height: 1.6em;
-  }
-  .header-btn {
-    margin-left: 12em;
-    margin-top: 4em;
-  }
-  .section-btn {
-    margin-left: 6.5em;
-    display: block;
-    margin-bottom: 4em;
-  }
-
-  .section-text {
-    padding-right: 10em;
-    line-height: 1.8em;
-  }
-
-  .header-title {
-    padding-left: 3.2em;
-    padding-right: 3.2em;
-    margin-bottom: 0em;
-  }
-  .header-text {
-    margin-left: 10em;
-    margin-right: 16em;
-  }
-
-  .header-img {
-    width: 58%;
-    object-fit: cover;
-    position: absolute;
-    left: 17em;
-  }
-
-  /* || Bottom list: How It works?*/
-
-  .list-title,
-  .list-item-ordered {
-    height: 56vh;
-    flex: 1 0 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* || Bottom-nav*/
+  /* || bottom-nav*/
   .bottom-nav {
     display: block;
-    height: 5em;
+    height: 4em;
     background-color: #a9a19e;
     text-align: center;
-    display: flex;
-    justify-content: center;
   }
   a {
     text-decoration: none;
@@ -486,20 +487,18 @@ body {
   }
   .bottom-nav i {
     position: relative;
-    left: 6%;
-    font-size: 2.5em;
+    top: 0.3em;
   }
 
   .bottom-nav p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    align-self: center;
   }
   .thin-gray-box {
     display: none;
   }
 }
-/* || Media Query for pads/tablets */
+/* || Images in the middle section - this fixed the problem with the images stacking a bit when the screen size was between 768 and 1050px */
 @media screen and (max-width: 1050px) and (min-width: 769px) {
   .page-section {
     display: flex;
@@ -509,8 +508,7 @@ body {
     margin: 2em auto;
   }
 }
-
-/* || Media Query for nav on mobiles */
+/* // For nav on mobiles */
 @media screen and (max-width: 767px) {
   .nav-list {
     width: 100%;
@@ -546,7 +544,7 @@ body {
   }
 }
 
-/* || Keyframes for nav on mobiles*/
+/* || Keyframes*/
 
 @keyframes slide-in {
   from {
@@ -554,5 +552,20 @@ body {
   }
   to {
     transform: translatey(0%);
+  }
+}
+
+/*for ipads and smaller screens*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 100% !important;
+  }
+  .header-div-column:nth-child(1) {
+    padding-left: 6em;
+  }
+  .section-container {
+    gap: 3em;
+    margin: 2em;
   }
 }

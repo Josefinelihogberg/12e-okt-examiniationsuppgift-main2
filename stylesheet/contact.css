@@ -10,52 +10,43 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
   color: #757575;
 }
 
-/* || Page header*/
 .contact-header {
   background-color: #c7ddea;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 40vh;
-  flex-direction: column;
 }
 
 .header-text {
   font-family: "Frank Ruhl Libre", serif;
-  flex-basis: 40%;
-  width: 70%;
-  font-size: 3em;
-  padding-left: 0.5em;
-  padding-right: 1em;
+  font-size: 2.8em;
+  margin: 0.5em 0 0 0.5em;
   font-weight: bolder;
   color: #050607;
-  line-height: 1em;
-  align-self: flex-start;
+  position: absolute;
+  top: 1.6em;
+  left: 0.5em;
 }
 
 .contact-header img {
-  max-height: 38vh;
-  object-fit: cover;
-  position: absolute;
-  right: 1em;
-  bottom: 0em;
+  max-width: 50%;
+  margin: 1em 1em 0 10em;
 }
 
-/* || Page navigation*/
 .page-nav,
 .nav-list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   background-color: #ffffff;
+  white-space: nowrap;
 }
 
 .nav-list {
@@ -63,10 +54,10 @@ a {
 }
 
 .list-item {
+  font-size: 1rem;
   font-weight: 700;
-  font-size: 0.9em;
-  color: #8d8d8d;
-  padding: 2em 4em;
+  color: #757575;
+  padding: 2.5em 4em;
   flex-basis: 50%;
   text-align: center;
 }
@@ -80,10 +71,9 @@ a {
   color: black;
 }
 
-/* || Contact form*/
 .contact-section {
   background-color: #a9a19e;
-  padding: 2em 1.5em;
+  padding: 2em 1em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -94,14 +84,13 @@ a {
   font-family: "Frank Ruhl Libre", serif;
   font-weight: 700;
   font-size: 3em;
-  color: white;
+  color: #fff;
 }
 
 .contact-mail {
-  color: #e4e2e1;
+  color: #f6f6f6;
   font-weight: 700;
   padding-left: 0.5em;
-  font-size: 0.9em;
 }
 
 .contact-input {
@@ -109,51 +98,52 @@ a {
   width: 100%;
   height: 3em;
   border-radius: 2px;
-  margin: 0.5em auto;
+  margin: 0.8em auto;
   padding-left: 0.5em;
   border: none;
   font-family: "Fira Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
+}
+::placeholder {
+  color: rgb(176, 176, 176);
 }
 
 .contact-message {
-  color: #e4e2e1;
+  color: #f6f6f6;
   font-weight: 700;
   padding-left: 0.5em;
-  font-size: 0.9em;
 }
 
 #textarea {
   display: block;
   width: 100%;
-  margin-top: 0.4em;
+  margin-top: 0.5em;
   padding: 1em 0.5em;
   height: 12em;
   font-family: "Fira Sans", sans-serif;
-  font-size: 1em;
+  font-weight: 700;
+  font-size: 1rem;
   border: none;
-  border-radius: 2px;
   resize: none;
+  border-radius: 2px;
 }
 
 .contact-btn {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 0.7em;
-  font-weight: 800;
-  padding: 1.3em 2em;
+  background-color: #f6f6f6;
+  padding: 1em 1em;
   border: none;
   box-shadow: 0 2px 1px rgb(176, 176, 176);
   border-radius: 50px;
   text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
   align-self: flex-end;
   float: right;
-  width: 12.5em;
-  margin-top: 3em;
-  background-color: #f6f6f6;
+  width: 40%;
+  margin-top: 2em;
   color: #000;
   cursor: pointer;
 }
-
 button:hover {
   box-shadow: 10px 12px 10px rgba(51, 50, 50, 0.1);
   background-color: #424243;
@@ -166,30 +156,28 @@ button:active {
 }
 
 .contact-address {
-  width: 90%;
+  width: 80%;
   height: 15rem;
   padding: 2em 1em;
   background-color: #fab131;
-  color: #ffffff;
+  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 0.8em;
   position: absolute;
-  top: -8em;
-  left: 5%;
+  top: -7em;
+  left: 10%;
+  padding-left: 2em;
 }
 
-/* || Address and map*/
 .address-header {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 3em;
+  font-size: 2.5rem;
   font-weight: 600;
-  align-self: center;
 }
 
 .address-text {
-  font-weight: 500;
-  padding-left: 1em;
+  font-weight: 700;
 }
 
 .gmap_canvas {
@@ -209,87 +197,94 @@ button:active {
   position: relative;
 }
 
-/* || Media Query for bigger screens*/
-
 @media screen and (min-width: 768px) {
-  html,
   body {
-    width: 90%;
-    background-color: #282828;
+    width: 70%;
+    background-color: #797979;
     margin: 0 auto;
   }
-
+  .contact-header {
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 8em;
+  }
   .header-text {
-    flex-basis: 0;
-    width: 410px;
-    align-self: center;
+    position: static;
+    margin-left: 3em;
+    margin-bottom: 1.15em;
   }
-
+  br {
+    display: none;
+  }
   .contact-header img {
-    right: 15%;
+    margin-top: 1em;
+    margin-left: 6em;
+    position: relative;
+    max-width: 20%;
   }
-
+  .page-nav {
+    width: 100%;
+    height: 6em;
+  }
+  .page-nav .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0 8em;
+    height: 5em;
+  }
+  .nav-list .list-item {
+    width: 100%;
+    padding: 2.5em 1.2em;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .list-item a {
+    font-weight: 700;
+  }
   .contact-section {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: center;
     flex-basis: 100%;
+    padding: 8em;
+    gap: 10em;
+  }
+  .contact-section .section-title {
+    font-size: 3.5rem;
+  }
+  .contact-address {
+    width: 60%;
   }
 
-  .nav-list {
-    width: 70%;
-    margin: 0 auto;
-  }
   .contact-btn {
     align-self: end;
-    width: 25%;
+    width: 40%;
   }
 
-  .section-title {
-    padding-left: 1.7em;
-    padding-right: 1.5em;
-    padding-top: 1.8em;
-  }
   .contact-form {
     display: flex;
     flex-direction: column;
-    flex: 1 1 60%;
-    padding-top: 5em;
-    padding-right: 9em;
-    padding-left: 5em;
+    flex: 1 1 40%;
+    margin-right: 4em;
   }
-
-  .contact-message {
-    margin-top: 1.2em;
+  .address-header {
+    font-size: 3.5rem;
   }
-
   .contact-address {
     position: relative;
-    width: 24em;
-    height: 15em;
-    padding: 1em;
-    top: -33em;
-    left: 8em;
-  }
-
-  .address-header {
-    padding-top: 0.3em;
-    font-size: 3.1em;
-  }
-
-  .address-text {
-    font-size: 1.1em;
-    line-height: 0.9em;
-    font-weight: 500;
-  }
-
-  .list-item {
-    flex-basis: 25%;
+    width: 26em;
+    height: 17em;
+    top: -31em;
   }
   .list-item:hover,
   .list-item a:hover {
     background-color: white;
     color: #000;
+  }
+  .list-item {
+    flex-basis: 25%;
   }
   .list-item:last-child {
     background-color: #fff;
@@ -300,8 +295,25 @@ button:active {
 
   .gray-box {
     position: relative;
-    top: -20.5em;
-    height: 20em;
+    top: -18em;
+    height: 15em;
     background-color: #757575;
+  }
+}
+/*For ipads - landscape & portrait view - just because I accidentally looked at the page on my ipad and got horrified. */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    width: 100% !important;
+  }
+  .contact-section {
+    padding: 3em;
+    gap: 2em;
+  }
+  .contact-section .section-title {
+    font-size: 2.5rem;
+  }
+  .contact-header {
+    padding-left: 1em;
   }
 }
