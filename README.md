@@ -1,13 +1,27 @@
-# HTML & CSS Examinationsuppgift - build a homepage for an insurance company with responsive design
-#### Grupp 3
-##### Josefine Li Högberg
-##### Erica Eklund
+# Insurance Company's Homepage with responsive design - Examinationsuppgift för kursen HTML&CSS
+ 
+Grupp 3
 
-#### https://josefinelihogberg.github.io/firstproject/
+* Josefine Li Högberg
 
-##### Hemsidan är designad för upplösning på 1920x1080 för desktop och till mobila enheter. 
-##### Fungerat tämligen okej på iPad och laptop.
-##### Vi har lagt till transition för google map och knapparna samt animation för nav-bar på mobilen. 
+* Erica Eklund
+
+Vi har lagt till transition för google map och knapparna samt animation för nav-bar på mobilen. 
+
+Welcome to experience online:
+
+https://josefinelihogberg.github.io/firstproject/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
